@@ -1,0 +1,35 @@
+.mymodal
+  & label
+    cursor: pointer
+    user-select: 
+  &__overlay
+    position: fixed
+    top: 0
+    left: rem(-9999px)
+    bottom: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    opacity: 0
+    transition: opacity .3s
+    &-layer
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background-color: rgba(black, .5)
+  &__controller
+    background: #ffffff
+    border-radius: rem(10px)
+    padding: rem(20px)
+    position: relative
+  &__close
+    position: absolute
+    top: rem(10px)
+    right: rem(10px)
+
+#mymodal-controller:checked ~ .mymodal__overlay
+  left: 0
+  right: 0
+  opacity: 1

@@ -1,0 +1,49 @@
+.slider
+  &__target
+    display: none
+  &__viewport
+    position: relative
+    width: rem(400px)
+    height: rem(200px)
+    overflow: hidden
+    margin: 0 auto
+  &__container
+    position: absolute
+    top: 0
+    left: 0
+    white-space: nowrap
+    font-size: 0
+    transition: left .5s
+  &__item
+    display: inline-block
+    vertical-align: middle
+  &__controls
+    text-align: center
+  &__control
+    width: rem(20px)
+    height: rem(20px)
+    border-radius: 50%
+    display: inline-block
+    vertical-align: middle
+    margin-right: rem(10px)
+    transition: background-color .2s
+    background-color: #2e2e2e
+    &:hover
+      cursor: pointer
+      background-color: #eee
+    &:last-child
+      margin-right: rem(0px)
+    margin-top: rem(20px)
+
+$slides: 'abstract', 'animals', 'nature', 'transport'
+$n: -1
+@each $slide in $slides
+  $i: index($slides, $slide)
+  $n: $n+1
+  ##{$slide}:target ~ .slider__viewport .slider__container
+    left: $n * -400px
+  ##{$slide}:target ~ .slider__controls [href="##{$slide}"]
+    background-color: #eee
+
+// #animals:target ~ .slider__viewport .slider__container
+// #animals:target ~ .slider__viewport .slider__container

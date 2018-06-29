@@ -1,0 +1,22 @@
+.mytooltip
+  &[data-tooltip]
+    position: relative
+    text-decoration: underline
+    cursor: pointer
+    &:before
+      display: block
+      position: absolute
+      bottom: 100%
+      transform: translate(-50%, 0);
+      background: rgba(#000, 0.6)
+      color: #ffffff
+      white-space: nowrap
+      padding: rem(5px) rem(10px)
+      content: attr(data-tooltip)
+      opacity: 0
+      left: rem(-9999px)
+      transition: opacity .4s
+    &:hover
+      &:before
+        opacity: 1
+        left: 50%

@@ -1,0 +1,51 @@
+mixin acco()
+  .acco
+    .acco#acco
+    .card
+      .card-header#headingOne
+        h5.mb-0
+          button.btn.btn-link(
+            type='button'
+            data-toggle='collapse'
+            data-target="#collapseOne"
+            aria-expanded='true'
+            aria-controls='collapseOne'
+          ) Collapsible Group Item #1
+      #collapseOne.collapse.show(
+        aria-labelledby='headingOne'
+        data-parent="#acco"
+      )
+        .card-body.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat temporibus minima dolorum illo a voluptates sit tempora corporis harum provident!
+    .card
+      .card-header#headingTwo
+        h5.mb-0
+          button.btn.btn-link(
+            type='button'
+            data-toggle='collapse'
+            data-target="#collapseTwo"
+            aria-expanded='true'
+            aria-controls='collapseTwo'
+          ) Collapsible Group Item #2
+      #collapseTwo.collapse(
+        aria-labelledby='headingTwo'
+        data-parent="#acco"
+      )
+        .card-body.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum quisquam excepturi asperiores? Quaerat unde aliquam pariatur, voluptates corporis asperiores natus obcaecati, perferendis expedita aspernatur debitis, repellendus iure deserunt eos!
+    .card
+      .card-header#headingThree
+        h5.mb-0
+          button.btn.btn-link(
+            type='button'
+            data-toggle='collapse'
+            data-target="#collapseThree"
+            aria-expanded='true'
+            aria-controls='collapseThree'
+          ) Collapsible Group Item #2
+      #collapseThree.collapse(
+        aria-labelledby='headingThree'
+        data-parent="#acco"
+      )
+        .card-body.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum quisquam excepturi asperiores? Quaerat unde aliquam pariatur, voluptates corporis asperiores natus obcaecati, perferendis expedita aspernatur debitis, repellendus iure deserunt eos!

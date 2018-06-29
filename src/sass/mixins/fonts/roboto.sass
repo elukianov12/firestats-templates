@@ -1,0 +1,75 @@
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2')
+    font-weight: 400
+    font-style: normal
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/Roboto/Roboto-Black.woff2') format('woff2')
+    font-weight: 800
+    font-style: normal
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/Roboto/Roboto-Blackitalic.woff2') format('woff2')
+    font-weight: 800
+    font-style: italic
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2')
+    font-weight: 800
+    font-style: normal
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/Roboto/Roboto-Bolditalic.woff2') format('woff2')
+    font-weight: 800
+    font-style: italic
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/Roboto/Roboto-Italic.woff2') format('woff2')
+    font-weight: 400
+    font-style: italic
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/Roboto/Roboto-Light.woff2') format('woff2')
+    font-weight: 300
+    font-style: normal
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/Roboto/Roboto-Lightitalic.woff2') format('woff2')
+    font-weight: 300
+    font-style: italic
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/Roboto/Roboto-Medium.woff2') format('woff2')
+    font-weight: 500
+    font-style: normal
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/Roboto/Roboto-Mediumitalic.woff2') format('woff2')
+    font-weight: 500
+    font-style: italic
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/Roboto/Roboto-Thin.woff2') format('woff2')
+    font-weight: 200
+    font-style: normal
+@font-face 
+    font-family: 'Roboto'
+    src: url('../fonts/Roboto/Roboto-Thinitalic.woff2') format('woff2')
+    font-weight: 200
+    font-style: italic
+
+=Roboto($weight: regular, $style: normal)
+    font-family: 'Roboto', Helvetica, Arial, sans-serif
+    @if $weight == light
+        font-weight: 300
+    @if $weight == regular
+        font-weight: 400
+    @if $weight == medium
+        font-weight: 500
+    @if $weight == bold
+        font-weight: 700
+    @if $style == normal
+        font-style: normal
+    @if $style == italic
+        font-style: italic

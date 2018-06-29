@@ -1,0 +1,12 @@
+.acco
+  &__trigger
+    cursor: pointer
+  &__content
+    max-height: 0
+    overflow: hidden
+    transition: max-height .5s
+  &__elem
+    display: none
+    &:checked
+      ~ .acco__content
+        max-height: rem(100px)

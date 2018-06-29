@@ -1,0 +1,13 @@
+mixin slider()
+  - var slides = ['abstract', 'animals', 'nature', 'transport']
+  .slider
+    for target in slides
+      .slider__target(id=`${target}`)
+    .slider__viewport
+      ul.slider__container
+        for slide in slides
+          li.slider__item
+            img(src=`http://lorempixel.com/400/200/${slide}`, alt="#")
+    .slider__controls
+      for control in slides
+        a.slider__control(href=`#${control}`)
