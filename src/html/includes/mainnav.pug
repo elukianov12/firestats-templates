@@ -1,0 +1,51 @@
+.container.mainnav__wrapper
+  nav.mainnav.navbar.navbar-expand-md.navbar-light.border-bottom
+    button.navbar-toggler(
+      type="button" 
+      data-toggle="collapse" 
+      data-target="#mainNav"
+      aria-controls="mainNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      )
+      span.navbar-toggler-icon
+    .collapse.navbar-collapse#mainNav
+      .row.no-gutters.w-100.justify-content-between
+        .col-auto
+          ul.navbar-nav
+            li.nav-item.dropdown
+              a#mainNavDropdown.mainnav__link(
+                href='#' 
+                role='button'
+                data-toggle='dropdown'
+                aria-haspopup='true'
+                aria-expanded='false'
+                )
+                | Все категории
+                i.mdi.mdi-chevron-down
+              .dropdown-menu(aria-labelledby='mainNavDropdown')
+                a.dropdown-item(href='#') Action
+                .dropdown-divider
+                a.dropdown-item(href='#') Another action
+        .col-auto
+        .col-auto.ml-auto
+          ul.navbar-nav
+            li.nav-item
+              a.mainnav__link.mdi.mdi-magnify(
+                href='#' 
+                role='button'
+                aria-haspopup='true'
+                aria-expanded='false'
+                )
+                | Поиск
+            li.nav-item
+              a.mainnav__link.mdi.mdi-cloud-download(
+                href='#' 
+                role='button'
+                aria-haspopup='true'
+                aria-expanded='false'
+                )
+                | Экспорт
+            li.nav-item
+              button.btn.btn-primary.text-uppercase
+                | Добавить
