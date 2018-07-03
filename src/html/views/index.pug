@@ -2,3 +2,17 @@ extends ../base
 block content
   include ../includes/stickyheader
   include ../includes/mainnav
+  .container
+    .row.justify-content-center
+      .col-auto
+        .navbar.navbar-expand-xs
+          ul.navbar-nav.d-flex
+            li.navbar-item.active
+              a(href="#")
+                | Сообщества
+            li.navbar-item
+              a(href="#")
+                | Записи
+
+    .row
+      .col
