@@ -4,15 +4,9 @@
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
+// Здесь перекрываем настройки бутстрапа
 
-// в этом месте мы можем перезаписывать переменные bootstrap
-// а так же иметь доступ к переменным
-
-// переписали значение одной переменной получив доступ к другой
-// $body-bg: theme-color-level(warning, 0)
-
-// переписали значение переменной своим собственным значением
-// $body-color: $blue; 
+//Переписываем цвета
 $blue:        #4a90e2
 $red:         #e04752
 $teal:        #32a76f
@@ -20,9 +14,15 @@ $body-color:  #343a41
 $body-bg:     #f5f5f6
 $text-muted:  rgba($body-color, 0.3)
 
-$font-family-sans-serif: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+//Переписываем стандартный набор цветов
+$font-family-base: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 
+// Меняем размеры контейнера
 $container-max-widths: (sm: 190px + 540px,  md: 190px + 720px,  lg: 190px + 960px,  xl: 190px + 1140px)
+
+//
+$font-weight-normal:          500
+$font-weight-base:            $font-weight-normal
 
 // Optional
 @import "~bootstrap/scss/root"

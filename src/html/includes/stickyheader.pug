@@ -1,10 +1,14 @@
 header.stickyheader
-  .row
-    .col
-      .logo
-        img.img-fluid.logo__img(src="../img/logo.png", alt="Firestats")
-    .col
-      .user.d-flex
-        .user__name
-        .user__avatar
-          img.img-fluid.user__img(src="../img/user.png", alt="Username")
+  .container
+    .row.align-items-center.justify-content-between
+      .col-auto
+        .logo
+          .logo__img
+            img.img-fluid(src="../img/logo.png", alt="Firestats")
+      .col-auto
+        .user.d-flex.align-items-center
+          .user__name.mr-2
+            | Max Hewman
+          .user__avatar
+            .user__img
+              img.img-fluid(src="../img/user.png", alt="Max Hewman")
